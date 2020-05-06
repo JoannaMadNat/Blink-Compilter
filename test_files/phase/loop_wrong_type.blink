@@ -1,0 +1,2 @@
+let start() :=
+    loop while 2 do true end

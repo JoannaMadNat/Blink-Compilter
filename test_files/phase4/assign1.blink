@@ -1,0 +1,15 @@
+let glob := 800
+
+let start() :=
+  let x := 5
+  let y := x * (8 - x)
+  let b1 := true
+  let b2 := false
+  let b3 := !(!b2 || b1)
+
+  let a := printint(y) # 15
+  let b := printint(x / 2) # 2
+  let y2 := y - x
+  let c := printint(y2 + 5) # 15
+  let d := printint(~(9 - 5)) # -4
+  printint(y + glob) # 0

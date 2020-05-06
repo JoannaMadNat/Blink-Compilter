@@ -1,0 +1,57 @@
+let glob := 100
+
+type Point(_x:int, _y:int) :=
+  member x: int := 23
+
+  member change0 := (x:=x+1)
+  member access0 := printint(x)
+
+  member changeg := (glob:=glob+1)
+  member accessg := printint(glob)
+
+  member pr := printstring("End of function Point_constructor\n")
+
+  member getX(c:int, i:int, j:int, k:int, o:int, p:int, kk:int, ll:int) :=
+          let l := 103
+
+          let change1 := (l:= l+1)
+          let access1 := printint(l)            # Accessing a function local
+
+          let change2 := (kk:= kk+1)
+          let access2 := printint(kk)           # Acessing a function 8th param
+
+          let change3 := (x:= x+1)
+          let access3 := printint(x)            # Acessing a class variable
+
+          let change5 := (glob := glob+1)
+          let access5 := printint(glob)
+
+          let change6 := (c:= c+1)
+          let access6 := printint(c)            # Accessing a function param
+
+          printstring("End of function Point_getX\n")
+end
+
+let getX(c:int, i:int, j:int, k:int, o:int, p:int, kk:int) :=
+            let l := 103
+
+            let change1 := (l:= l+1)
+            let access1 := printint(l)            # Accessing a function local
+
+            let change2 := (kk:= kk+1)
+            let access2 := printint(kk)           # Acessing a function 8th param
+
+            let change5 := (glob := glob+1)
+            let access5 := printint(glob)
+
+            let change6 := (c:= c+1)
+            let access6 := printint(c)            # Accessing a function param
+
+            printstring("End of function getX\n")
+
+let start() :=
+    let loc := new Point(6,4)
+    let call1 := loc.getX(1,2,3,4,5,6,7,8)
+    let call2 := getX(1,2,3,4,5,6,7)
+
+  printstring("End of function Start\n")

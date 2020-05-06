@@ -1,0 +1,9 @@
+type Point(initX: int, initY: int) :=
+    member x: int := initX
+    member y: int := initY
+end
+
+let start() :=
+    let p1: Point := new Point(0, 0)
+    let p2: Point := new Point(100, 200)
+    true # what should our symbol table be here?

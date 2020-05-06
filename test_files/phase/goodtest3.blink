@@ -1,0 +1,19 @@
+# goodtest3.blink
+
+let x := 5 + 7
+let str := "klsdjflksjfkdjfkldsjk"
+let bad := 2 + 2 - 1 + "kljkljkl"
+let z := ! true
+let a := !7 + ~6                   # ((not 9) + 6)
+
+let b := y - 7 && 5 = y            # ((y - 7) && (5 = y))
+let x := y / ~3
+let c := x > 3 || 5                # ((x > 3) || 5)
+let c := ~x >= 2 * 5               # ((-x) >= (2 * 5))
+let c := x - 10 * 11 = 2 / 3       # (((+x) - (10 * 11)) = (2 / 3))
+let x := y + z / x - a * z         # (((+x) - (10 * 11)) - (2 / 3))
+let x := y + z / x - a + z / 2     # (((y + (z / x)) - a) + (z / 2))
+let x := x + 2 + 3 + 4             # (((x + 2) + 3) + 4)
+let x := 5 + z / 3 * 3 + 2 + b / 3 # (((5 + ((z / 3) * 3)) + 2) + (b / 3))
+
+

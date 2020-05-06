@@ -1,0 +1,12 @@
+let jjjj := 9
+
+ let other(x: int, y:int): bool :=
+   if y = x then
+     false
+
+   end
+
+let test2(x: int): int :=
+  if other(8,9) then # error
+    x - 1
+  end

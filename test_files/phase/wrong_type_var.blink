@@ -1,0 +1,5 @@
+let x: int := true
+
+let start() :=
+    let x: int := true
+    x # undeclared variable

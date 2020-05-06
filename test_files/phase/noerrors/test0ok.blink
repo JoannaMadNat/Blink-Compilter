@@ -1,0 +1,20 @@
+# test0ok.blink
+# Tests scalar type checking with assignment stmts
+
+let boo: bool := true
+let foo: bool := false
+let food: bool := false
+
+let fot: int := 0
+let i2: int := 0
+
+let fotin := true
+let b5 := ! boo && true
+let b6 := fot > i2
+let b7 := false
+let b8 := boo || true
+  
+let i3 := 10
+let i4 := 10 * i2 - fot
+let i5 := 0 + (3 - 4) * ~1
+let i6 := 10 + i2 - fot

@@ -1,0 +1,10 @@
+# ************** PASSED ***************
+
+let start() :=
+  let comp1 := "joanna\n"
+
+  let k := printstring(comp1)
+  let c := setchar(comp1, 2, 51)
+  let j := printstring(comp1)
+
+  printint(getlength(comp1))

@@ -1,0 +1,13 @@
+# ************** PASSED ***************
+
+type Point(_x:int, _y:int) :=
+  member x: int := 23
+  member jj := (x:= x + 2)
+  member getX(_c:int, i:int, j:int, k:int, o:int, p:int, kk:int): int :=
+    _y    # return value
+end
+
+let start() :=
+  let loc := new Point(6,4)
+
+  printint(loc.getX(1,2,3,4,5,6,7))

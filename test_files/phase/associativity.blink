@@ -1,0 +1,6 @@
+#associate
+let a:= 8
+let b :=0
+let c := 10
+
+let z :=  ( a * b ) * c = a * ( b * c )

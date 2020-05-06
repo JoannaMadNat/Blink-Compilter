@@ -1,0 +1,40 @@
+type GrandParent(x: int) :=
+  member y := printstring("grandparent\n")
+end
+
+type Parent(x: int) inherits from GrandParent(x):=
+  member y := printstring("parent\n")
+end
+
+type Child(x: int) inherits from Parent(x) :=
+  member y :=  printstring("child\n")
+end
+
+
+
+let makeChild() : GrandParent := new Child(80)
+
+
+  type Parent(x: int) :=
+      member l1 :=99
+
+      member func1(ha:int, haha:int): int :=
+          let k := 50
+          let u := 50
+          x
+  end
+
+  type Child(x: int, y: int) inherits from Parent(x) :=
+      member l1 :=99
+
+      member func2(meh:int, memeh:int) :=
+          let k := 50
+          let u := 50
+          me
+  end
+
+  let start() :=
+    let c := new Child(10, 20)
+    let f := c.func2(3,2)
+    let h := dostuff(3,3).func2(3,3).func1(2,3)
+    printint(9001)

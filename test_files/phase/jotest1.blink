@@ -1,0 +1,11 @@
+type
+joclass() :=
+    member newvar: string := "jkhjkhkhj"
+    end
+
+let dostuff(jo : int, jojo: int) :=
+    if "jkjhjkhj" then
+        loop while "kjlkjkljkj" do
+            "kkljlkjkj"
+        end
+    end
